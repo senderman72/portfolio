@@ -71,3 +71,47 @@ nav {
 }
 
 /* Work Section */
+.work {
+    scroll-margin-top: 100px;
+}
+
+.work-title {
+    text-align: center;
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.work-subtitle {
+    color: #6b7280;
+    padding: 0px 20px 5px 20px;
+    max-width: 896px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.chips-wrapper {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin: 8px 0px;
+    padding: 0px 12px;
+}
+
+.chip {
+    border-radius: 9999px;
+    padding: 4px 12px;
+    border: solid 1px rgb(rgb(65, 15, 15), rgb(6, 22, 6), rgb(17, 17, 56));
+    font-size: 14px;
+}
+
+/* Button Section */
+button {
+    border: solid 1px rgb(rgb(65, 15, 15), rgb(6, 22, 6), rgb(17, 17, 56));
+    border-radius: 6px;
+    width: 128px;
+    padding: 8px 0px;
+    background-color: white;
+    font-size: 14px;
+}
