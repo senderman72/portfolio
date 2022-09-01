@@ -277,17 +277,17 @@ footer {
         flex-wrap: wrap;
     }
     .project {
-        margin: 25px auto; /* ändrar margin på y axeln från 40px till 25px */
-        height: 300px; /* sänker heighten för att bibehålla en någorlunda proportionalitet */
+        margin: 25px auto; 
+        height: 300px; 
     }
 
     .project-text-title {
         font-size: 24px;
-        line-height: 32px; /* line-height specificerar avståndet från olika rader i texten. */
+        line-height: 32px; 
         margin-bottom: 12px;
     }
     .project-text {
-        padding: 20px; /* 20px från alla håll */
+        padding: 20px; 
     }
 
 }
