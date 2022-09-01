@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 200;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    background-color: #bdc3c7;
+}
+
+
+/* Navigation Section */
+
+nav {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    padding: 10px 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f1f1bf;
+    z-index: 100;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-links img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+svg {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Hero Section */
+
+.hero {
+    min-height: 85vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* max-width: 1000px; */
+    margin: 0 auto;
+
+        background-image: url("./img/astro.png"), linear-gradient(#bdc3c7, #2c3e50 );
+      
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: 1;
+        width: 100%;
+        object-fit: contain;
+      
+}
+    
+
+
+.hero h1 {
+    font-size: 48px;
+    line-height: 1;
+    color: black;
+}
+
+.hero p {
+    color: black;
+}
+
+.hero h1,
+.hero p {
+    margin-bottom: 8px;
+}
+
+.hero-img {
+    margin-right: 50px;
+    border: 15px;
+}
+
+.hero-img img {
+    height: 450px;
+    border-radius: 5px;
+}
+
+/* Work Section */
+.work {
+    scroll-margin-top: 100px;
+    background-color: #bdc3c7;
+    
+}
+
+.work-title {
+    text-align: center;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    color: black;
+}
+
+.work-subtitle {
+    color: black;
+    padding: 0px 20px 5px 20px;
+    max-width: 896px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.chips-wrapper {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    margin: 8px 0px;
+    padding: 5px 12px;
+    background-color: #2c3e50 ;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.chip {
+    border-radius: 9999px;
+    padding: 4px 10px;
+    font-size: 15px;
+    border: solid 2px RGB(221, 65, 36) ;
+    font-weight: bold;
+    color: RGB(221, 65, 36);
+    
+}
+
+/* Button Section */
+button {
+    border: solid 1px rgb(rgb(65, 15, 15), rgb(6, 22, 6), rgb(17, 17, 56));
+    border-radius: 6px;
+    width: 128px;
+    padding: 8px 0px;
+    background-color: #f1f1f1bf;
+    font-size: 14px;
+    color: #1c2d47;
+}
+
+/* Project section */
+.project-container {
+    padding: 0 20px;
+}
+
+.project {
+    margin: 40px auto;
+    max-width: 1024px;
+    height: 450px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 20px;
+}
+
+.img-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: 150ms;
+}
+
+.img-overlay {
+    position: absolute;
+    inset: 0;
+}
+
+.project img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-text-container {
+    position: absolute;
+    inset: 0;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 30px;
+    color: #2c3e50;
+}
+
+.project-text-title {
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 900;
+}
+
+.project-text-subtitle {
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+footer {
+    padding: 40px;
+    background-color: rgb(229, 231, 235); ;
+}
+
+.footer-license {
+    text-align: center;
+    color: rgb(75, 85, 99);
+}
+
+/* Resposiveness */
+@media screen and (max-width: 1024px) {
+    .hero {
+        flex-direction: column;
+        padding: 12px 20px;
+        margin-top: 70px;
+        max-width: 768px;
+        
+    }
+    .hero h1 {
+        font-size: 36px;
+        line-height: 40px;
+    }
+    .hero-img {
+        margin-right: 0px;
+        margin-bottom: 12px;
+        
+    }
+    .hero-img img {
+        width: 350px;
+        
+
+    }
+    
+}
+
+@media screen and (max-width: 724px) {
+    p {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .hero {
+        min-height: unset;
+        margin-bottom: 40px;
+    }
+    .hero h1 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .hero-img img {
+        height: min(20vh, 360px);
+        width: 100px;
+    }
+    .work-title {
+        font-size: 30px;
+        line-height: 36px;
+        margin-bottom: 6px;
+    }
+    .chip {
+        padding: 4px 10px;
+        font-size: 12px;
+    }
+    .chips-wrapper {
+       
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .project {
+        margin: 25px auto; /* ändrar margin på y axeln från 40px till 25px */
+        height: 300px; /* sänker heighten för att bibehålla en någorlunda proportionalitet */
+    }
+
+    .project-text-title {
+        font-size: 24px;
+        line-height: 32px; /* line-height specificerar avståndet från olika rader i texten. */
+        margin-bottom: 12px;
+    }
+    .project-text {
+        padding: 20px; /* 20px från alla håll */
+    }
+
+}
+
+
+
