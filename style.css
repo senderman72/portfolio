@@ -238,7 +238,7 @@ footer {
         
     }
     .hero-img img {
-        width: 350px;
+        width: 100vh;
         
 
     }
@@ -253,8 +253,9 @@ footer {
     .hero {
         min-height: unset;
         margin-bottom: 40px;
+       
 
-        background-size: 400px;
+        background-size: cover;
         background-position: bottom right;
         
     }
@@ -263,8 +264,8 @@ footer {
         line-height: 32px;
     }
     .hero-img img {
-        height: 35vh;
-        width: 50vw;
+        height: 40vh;
+        width: 60vw;
        
     }
     .work-title {
@@ -299,6 +300,7 @@ footer {
     }
 
 }
+
 
 
 
