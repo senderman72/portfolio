@@ -253,14 +253,19 @@ footer {
     .hero {
         min-height: unset;
         margin-bottom: 40px;
+
+        background-size: 400px;
+        background-position: bottom right;
+        
     }
     .hero h1 {
         font-size: 24px;
         line-height: 32px;
     }
     .hero-img img {
-        height: min(20vh, 360px);
-        width: 100px;
+        height: 35vh;
+        width: 50vw;
+       
     }
     .work-title {
         font-size: 30px;
@@ -285,9 +290,12 @@ footer {
         font-size: 24px;
         line-height: 32px; 
         margin-bottom: 12px;
+        color: black;
     }
     .project-text {
         padding: 20px; 
+        
+    
     }
 
 }
